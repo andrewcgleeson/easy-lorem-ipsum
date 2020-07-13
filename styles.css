@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&family=Ubuntu&display=swap');
+
+/* 
+Call the fonts:
+font-family: 'Yellowtail', cursive;
+font-family: 'Ubuntu', sans-serif;
+ */
+
+* {
+    margin: 0em;
+    padding: 0em;
+}
+
+html {
+    font-size: 16px;
+}
+
+main {
+    margin: 4em;
+}
+
+/* === Section === */
+section {
+    text-align: center;
+}
+
+section h1 {
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 2em;
+}
+
+h1 i {
+    font-family: 'Yellowtail', cursive;
+    font-size: 1.2em;
+}
+
+/* === Form === */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    margin: 0em auto 0em auto
+}
+
+input[type="number"] {
+    border: solid .15em rgba(15, 15, 15, .6);
+    border-radius: .4em;
+    margin-top: .2em;
+    padding: .5em;
+    /* Hide arrow buttons on right of input field (Firefox) */
+    -moz-appearance: textfield;
+}
+
+/* Hide arrow buttons on right (Other browsers) */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+label {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+}
+
+/* === Button === */
+button {
+    box-shadow: 0em .6em 1em -.5em #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    border: none;
+    border-radius: .4em;
+    color:#ffffff;
+    font-family:Arial;
+    font-size: 1em;
+    font-weight: bold;
+    margin: .4em 0em .4em 0em;
+    max-width: 25%;
+    outline: 0;
+    padding: .4em;
+}
+
+
+/* === Article === */
+article {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 4em 30% 4em 30%;
+}
+
+.text {
+    animation: fadeIn ease-in-out .5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
